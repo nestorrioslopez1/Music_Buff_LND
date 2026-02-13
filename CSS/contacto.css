@@ -1,0 +1,48 @@
+/* CONTACTO: estilos específicos para la página de contacto */
+.contact-section .container {
+  max-width: 1400px;
+  margin: 2rem auto;
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+.contact-left { max-width: 480px; }
+.contact-right { flex: 1; }
+.contact-form {
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #e0e0e0;
+  padding: 1.25rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(15,15,15,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.contact-form label { font-weight: 600; font-size: 0.95rem; }
+.contact-form input,
+.contact-form select {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #e9e9e9;
+  border-radius: 6px;
+  background: #fafafa;
+  font-size: 0.95rem;
+}
+.contact-form input:focus,
+.contact-form select:focus { outline: none; border-color: #a84845; background: #fff; }
+.contact-form .btn {
+  margin-top: 0.5rem;
+  align-self: flex-start;
+  padding: 0.6rem 1rem;
+  background: #a84845;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+@media (max-width: 900px) {
+  .contact-section .container { flex-direction: column; padding: 0 1rem; }
+  .contact-left { max-width: none; }
+  .contact-form { width: 100%; }
+}

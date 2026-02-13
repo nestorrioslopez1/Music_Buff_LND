@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Music Buff</title>
+  <link rel="icon" href="img/favicon.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/contacto.css">
+</head>
+<body>
+  <!-- SECCIÓN: Encabezado - logo, búsqueda, iniciar sesión, carrito -->
+  <header>
+    <div class="header-top">
+      <a href="/" class="logo-wrap">
+        <img src="img/Logo.png" alt="Music Buff" class="logo-img">
+      </a>
+      <div class="search-and-signin">
+        <div class="search-wrap">
+          <input type="search" class="search-bar" placeholder="Search for instruments and more..." aria-label="Search">
+        </div>
+        <a href="#signin" class="header-signin">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          Sign in
+        </a>
+      </div>
+      <div class="header-actions">
+        <a href="#cart" aria-label="Cart">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        </a>
+      </div>
+    </div>
+    <!-- SECCIÓN: Navegación - enlaces principales de categorías -->
+    <nav class="nav-main">
+      <div class="nav-main-inner">
+        <ul class="nav-links">
+          <li><a href="#guitars">Guitars</a></li>
+          <li><a href="#amps">Amps</a></li>
+          <li><a href="#2ndhand">2nd hand</a></li>
+          <li><a href="#drums">Drums</a></li>
+          <li><a href="#bass">Bass</a></li>
+          <li><a href="#more">More</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- SECCIÓN: Contenido principal - Formulario de contacto -->
+  <main>
+    <section class="contact-section" aria-label="Formulario de contacto">
+      <div class="container">
+        <div class="contact-left">
+          <h1>Contacto</h1>
+          <form action="#" method="post" class="contact-form">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="country">País</label>
+            <select id="country" name="country" required>
+              <option value="">Elige un país</option>
+              <option value="es">España</option>
+              <option value="it">Italia</option>
+              <option value="us">EEUU</option>
+              <option value="gb">Inglaterra</option>
+            </select>
+
+            <button type="submit" class="btn">Enviar</button>
+          </form>
+        </div>
+        <div class="contact-right" aria-hidden="true"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-blocks">
+      <div class="footer-block">Contact us</div>
+      <div class="footer-block">About us</div>
+      <div class="footer-block footer-social">
+        <span class="footer-icon" aria-label="Instagram">
+          <img src="img/logotipo-de-instagram.png" alt="Instagram">
+        </span>
+        <span class="footer-icon" aria-label="Facebook">
+          <img src="img/facebook.png" alt="Facebook">
+        </span>
+        <span class="footer-icon" aria-label="Logotipos">
+          <img src="img/logotipos.png" alt="Logotipos">
+        </span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
