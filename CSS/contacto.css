@@ -1,13 +1,39 @@
 /* CONTACTO: estilos específicos para la página de contacto */
-.contact-section .container {
+
+/* Contenedor principal que agrupa el formulario y el mapa en dos columnas */
+.contact-container {
   max-width: 1400px;
   margin: 2rem auto;
   display: flex;
   gap: 2rem;
   align-items: flex-start;
+  padding: 0 1rem;
 }
-.contact-left { max-width: 480px; }
+
+/* Sección del formulario -  (flex: 0.4 la hace más fina) */
+.contact-section {
+  flex: 0.4;
+  min-width: 0;
+}
+
+/* Contenedor interno del formulario */
+.contact-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Columna izquierda - ancho completo del contenedor */
+.contact-left { width: 100%; }
 .contact-right { flex: 1; }
+
+/* iframe del mapa */
+.contact-container iframe {
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+  height: 600px; /* Mapa más largo */
+}
 .contact-form {
   width: 100%;
   background: #FFFFFF;
@@ -19,7 +45,14 @@
   flex-direction: column;
   gap: 0.75rem;
 }
-.contact-form label { font-weight: 600; font-size: 0.95rem; }
+
+/* Estilo de las etiquetas - letra más gruesa y legible */
+.contact-form label { 
+  font-weight: 600; 
+  font-size: 0.95rem; 
+}
+
+/* Estilos de inputs y selects - bordes sutiles y fondo claro */
 .contact-form input,
 .contact-form select {
   width: 100%;
@@ -29,8 +62,16 @@
   background: #fafafa;
   font-size: 0.95rem;
 }
+
+/* Enfoque en inputs - cambio de color y fondo cuando están activos */
 .contact-form input:focus,
-.contact-form select:focus { outline: none; border-color: #a84845; background: #fff; }
+.contact-form select:focus { 
+  outline: none; 
+  border-color: #a84845; 
+  background: #fff; 
+}
+
+/* Botón de envío - estilos personalizados con color rojo */
 .contact-form .btn {
   margin-top: 0.5rem;
   align-self: flex-start;
@@ -41,8 +82,19 @@
   border-radius: 6px;
   cursor: pointer;
 }
+/* Media query para pantallas pequeñas - apila las columnas verticalmente */
 @media (max-width: 900px) {
-  .contact-section .container { flex-direction: column; padding: 0 1rem; }
+  .contact-container {
+    flex-direction: column; /* Cambia las columnas a filas */
+    padding: 0 1rem;
+  }
+  .contact-section { width: 100%; }
+  
+  /* En móviles, el mapa es más corto */
+  .contact-container iframe {
+    width: 100%;
+    height: 300px;
+  }
   .contact-left { max-width: none; }
   .contact-form { width: 100%; }
 }
