@@ -194,12 +194,13 @@ body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Ro
 
 /* SECCIÓN DE TARJETAS: Promociones rápidas / enlaces visuales */
 .cards-section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 0;
   max-width: 1400px;
   margin: 0 auto;
 }
+.card { width: 50%; box-sizing: border-box; }
 .card {
   padding: 2rem 1.5rem;
   min-height: 320px;
@@ -315,7 +316,8 @@ body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Ro
 }
 
 @media (max-width: 900px) {
-  .cards-section { grid-template-columns: 1fr; }
+  .cards-section { flex-direction: column; }
+  .card { width: 100%; }
   .hero { padding-left: 1.5rem; }
   .header-top { flex-direction: column; align-items: stretch; }
   .search-and-signin { max-width: none; }
