@@ -233,7 +233,7 @@ body { margin: 0; font-family: 'Poppins', sans-serif; color: #333; }
 }
 .card:hover .card-title { text-decoration: underline; }
 
-/* FOOTER: pie de pagina */
+/* FOOTER:  */
 .site-footer {
   background: #FFFFFF;
   border-top: 1px solid #e0e0e0;
@@ -279,8 +279,7 @@ body { margin: 0; font-family: 'Poppins', sans-serif; color: #333; }
 }
 
 /* ICONOS FOOTER: tamaño y espaciado
-   - Se usa `object-fit: contain` para mantener proporción sin deformar
-   - Los tamaños se ajustan en pantallas pequeñas vía media query
+   - Se usa `object-fit: contain` para mantener proporción sin deformar los tamaños
 */
 .footer-social img {
   width: 28px;

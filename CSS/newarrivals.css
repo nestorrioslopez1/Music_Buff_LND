@@ -34,10 +34,10 @@
   margin-bottom: 20px;
 }
 
-/* grid de 4 columnas para las imagenes */
+/* flexbox de 4 columnas para las imagenes */
 .portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 15px;
 }
 
@@ -46,6 +46,8 @@
   position: relative;
   overflow: hidden;
   border-radius: 8px;
+  flex: 1 1 calc(25% - 15px);
+  min-width: 200px;
 }
 
 .portfolio-item img {
@@ -58,8 +60,8 @@
 
 /* tablet */
 @media (max-width: 900px) {
-  .portfolio-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .portfolio-item {
+    flex: 1 1 calc(50% - 15px);
   }
   .arrivals-intro h1 {
     font-size: 26px;
@@ -71,8 +73,8 @@
 
 /* movil */
 @media (max-width: 480px) {
-  .portfolio-grid {
-    grid-template-columns: 1fr;
+  .portfolio-item {
+    flex: 1 1 100%;
   }
   .arrivals-intro h1 {
     font-size: 22px;

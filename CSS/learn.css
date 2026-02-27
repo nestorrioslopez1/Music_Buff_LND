@@ -22,7 +22,7 @@
   border-radius: 8px;
   object-fit: cover;
 }
-/* Video sencillo / */
+/* Video  */
 .learn-left video {
   width: 100%;
   max-height: 360px;
@@ -31,8 +31,7 @@
   object-fit: cover;
 }
 
-/* Columna derecha: texto 'Learn with us' y sección 'About us'
-  */
+/* Columna derecha: texto 'que ofrecemos' y sección 'sobre nosotros' */
 .learn-right {
   flex: 0.6;
   min-width: 0;
@@ -47,7 +46,7 @@
 .learn-right p {
   margin: 0;
 }
-/* Sección adicional 'About us' con estilo sencillo */
+/* Sección adicional 'spbre nosotros'  */
 .about-section p {
   margin: 0;
   color: #444;
