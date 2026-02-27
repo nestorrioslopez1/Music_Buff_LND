@@ -1,0 +1,238 @@
+/* estilos de la pagina de ofertas */
+
+/* seccion con el video de fondo */
+.video-hero {
+  position: relative;
+  min-height: 420px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/* pongo el video en absoluto para que quede detras */
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* el texto que sale encima del video */
+.video-hero-content {
+  position: relative;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 40px;
+  max-width: 550px;
+}
+
+.video-hero-content h1 {
+  font-size: 36px;
+  font-weight: 800;
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.video-hero-sub {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.video-hero-date {
+  font-size: 14px;
+  color: #ccc;
+}
+
+
+/*
+  CARRUSEL 
+  funciona con radios ocultos, cuando clickas un punto
+  cambia el radio y se ve otra imagen
+*/
+.slideshow-section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.slideshow-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.slideshow {
+  background: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* escondo los radios */
+.slideshow input[type="radio"] {
+  display: none;
+}
+
+/* todas las slides ocultas */
+.slide {
+  display: none;
+}
+
+/* cuando el radio esta checked muestro su slide */
+#slide1:checked ~ .slides .slide:nth-child(1) { display: block; }
+#slide2:checked ~ .slides .slide:nth-child(2) { display: block; }
+#slide3:checked ~ .slides .slide:nth-child(3) { display: block; }
+#slide4:checked ~ .slides .slide:nth-child(4) { display: block; }
+
+.slide img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.slide-info {
+  padding: 15px 20px;
+  text-align: left;
+  background: white;
+}
+
+.slide-info h3 {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.slide-info p {
+  margin: 0;
+  color: #555;
+}
+
+/* puntitos para cambiar de slide */
+.slideshow-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 15px;
+  background: white;
+}
+
+.slideshow-dots label {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.slideshow-dots label:hover {
+  background-color: #999;
+}
+
+/* punto activo = color rojo */
+#slide1:checked ~ .slideshow-dots label[for="slide1"],
+#slide2:checked ~ .slideshow-dots label[for="slide2"],
+#slide3:checked ~ .slideshow-dots label[for="slide3"],
+#slide4:checked ~ .slideshow-dots label[for="slide4"] {
+  background-color: #a84845;
+}
+
+
+/* seccion de por que comprar segunda mano */
+.why-section {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: flex;
+  gap: 30px;
+}
+
+.why-article {
+  flex: 2;
+}
+
+.why-article h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.why-article p {
+  line-height: 1.7;
+  color: #444;
+}
+
+.benefits-list {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.benefits-list li {
+  margin-bottom: 8px;
+}
+
+/* aside con marcas */
+.why-aside {
+  flex: 1;
+  background: #dddddd;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 3px solid #a84845;
+}
+
+.why-aside h3 {
+  margin-top: 0;
+}
+
+.why-aside ol {
+  padding-left: 20px;
+}
+
+.why-aside li {
+  margin-bottom: 5px;
+}
+
+.why-aside a {
+  color: #a84845;
+}
+
+
+/* tablet */
+@media (max-width: 900px) {
+  .video-hero-content {
+    padding: 25px;
+    max-width: 100%;
+  }
+  .video-hero-content h1 {
+    font-size: 28px;
+  }
+  .why-section {
+    flex-direction: column;
+  }
+  .slide img {
+    height: 280px;
+  }
+}
+
+/* movil */
+@media (max-width: 480px) {
+  .video-hero {
+    min-height: 280px;
+  }
+  .video-hero-content h1 {
+    font-size: 22px;
+  }
+  .video-hero-sub {
+    font-size: 14px;
+  }
+  .slideshow-section h2 {
+    font-size: 22px;
+  }
+  .slide img {
+    height: 200px;
+  }
+}
