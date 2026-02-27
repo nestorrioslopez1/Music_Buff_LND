@@ -53,7 +53,7 @@
   color: #444;
 }
 
-/* Responsive: en pantallas pequeñas apilar verticalmente */
+/* Responsive*/
 @media (max-width: 900px) {
   .learn-container {
     flex-direction: column;
