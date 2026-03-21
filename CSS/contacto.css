@@ -114,6 +114,134 @@
   font-size: 14px;
 }
 
+/* Estilos para la sección de pedidos para recoger */
+.pickup-orders {
+  margin-bottom: 2rem;
+}
+
+.pickup-orders h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.pickup-form {
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #e0e0e0;
+  padding: 1.25rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(15,15,15,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.pickup-form label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.pickup-form input[type="text"],
+.pickup-form input[type="email"] {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #e9e9e9;
+  border-radius: 6px;
+  background: #fafafa;
+  font-size: 0.95rem;
+}
+
+.pickup-form input:focus {
+  outline: none;
+  border-color: #a84845;
+  background: #fff;
+}
+
+.pickup-form button {
+  margin-top: 0.5rem;
+  align-self: flex-start;
+  padding: 0.6rem 1rem;
+  background: #a84845;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Estilos para la sección de reservas */
+.reservations-section {
+  margin-top: 2rem;
+  padding: 1.25rem;
+  background: #FFFFFF;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(15,15,15,0.05);
+}
+
+.reservations-section h2 {
+  color: #a84845;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.reservations-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  background: #ffffff;
+}
+
+.reservations-section table tr:first-child {
+  background-color: #a84845;
+  color: white;
+}
+
+.reservations-section table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #e9e9e9;
+  font-size: 0.95rem;
+}
+
+.reservations-section table tr:first-child td {
+  color: white;
+  font-weight: 600;
+  border-bottom: none;
+}
+
+.reservations-section input[type="text"],
+.reservations-section input[type="number"] {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  margin-bottom: 0.75rem;
+  border: 1px solid #e9e9e9;
+  border-radius: 6px;
+  background: #fafafa;
+  font-size: 0.95rem;
+  box-sizing: border-box;
+}
+
+.reservations-section input:focus {
+  outline: none;
+  border-color: #a84845;
+  background: #fff;
+}
+
+.reservations-section button {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  background: #a84845;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.reservations-section button:hover {
+  background: #8b3a38;
+}
+
 /* Media query para pantallas pequeñas  */
 @media (max-width: 900px) {
   .contact-container {
@@ -138,4 +266,22 @@
   .contact-form input,
   .contact-form select { font-size: 13px; padding: 8px; }
   .contact-container iframe { height: 250px; }
+  .pickup-orders h2 { font-size: 18px; }
+  .pickup-form label { font-size: 13px; }
+  .pickup-form input { font-size: 13px; padding: 8px; }
+  .reservations-section h2 { font-size: 1.1rem; }
+  .reservations-section table td { 
+    padding: 0.5rem;
+    font-size: 12px;
+  }
+  .reservations-section input[type="text"],
+  .reservations-section input[type="number"] {
+    font-size: 13px;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .reservations-section button {
+    font-size: 14px;
+    padding: 0.5rem;
+  }
 }

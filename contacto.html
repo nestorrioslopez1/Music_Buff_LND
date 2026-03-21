@@ -110,10 +110,30 @@
 
               <button type="submit" class="btn">Enviar</button>
               </form>
+
+              <!-- Sección de reservas -->
+              <div class="reservations-section">
+                <h2>Reservas en tienda</h2>
+                <table id="tabla">
+                    <tr>
+                        <td>Producto</td>
+                        <td>Cantidad</td>
+                        <td>Tienda</td>
+                    </tr>
+                </table>
+                <input id="producto" type="text" placeholder="Producto">
+                <input id="cantidad" type="number" placeholder="Cantidad">
+                <input id="tienda" type="text" placeholder="Tienda">
+                <button onclick="agregar()">Reservar en tienda</button>
+              </div>
             </div>
             <div class="contact-right" aria-hidden="true"></div>
+            
           </div>
+         
         </section>
+        
+        <script src="Reserva.js"></script>
         <!--seccion de iframe para mapa de google-->
         <iframe
           src="https://www.google.com/maps/embed?pb=!4v1771149703894!6m8!1m7!1sp4TQLvNBXeH2f0UzHAdMTg!2m2!1d28.1310122652378!2d-15.44357846771707!3f293.7280259688382!4f5.436987297053577!5f0.7820865974627469"
