@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Music Buff - RSS</title>
+    <link>file:///C:/Users/nrlop/Desktop/LND/Music_Buff/index.html</link>
+    <description>Sindicación de contenidos - Music Buff</description>
+    <item>
+      <title>Botón ocultar imagen</title>
+      <link>file:///C:/Users/nrlop/Desktop/LND/Music_Buff/contacto.html</link>
+      <description>Se ha añadido un boton con una funcionalidad de JavaScript en la página de contacto.html para ocultar una imagne cuando se hace click en el boton</description>
+    </item>
+    <item>
+      <title>Sección de reserva</title>
+      <link>file:///C:/Users/nrlop/Desktop/LND/Music_Buff/contacto.html</link>
+      <description>Se ha añadido una secciion de feed  en la pagina de inicio</description>
+    </item>
+    
+  </channel>
+</rss>
